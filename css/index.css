@@ -5,5 +5,112 @@
 }
 html,body{
     font-family: 'Jost', sans-serif;
+    font-size: 16px;
+}
+
+/* header - navbar */
+.header {
+    background-color: #fff ;
+    z-index: 0;
+}
+.header .container{
+    padding: 0 25px;
+}
+.header.fixed-top{
+    top: 40px;
+    z-index: 10;
+}
+.header .navbar .navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar .navbar-brand{
+    color: #189A46;
+    font-size: 2.125rem;
+    font-weight: 600;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color:#189A46;
+}
+.header .navbar .nav-item{
+    padding: 0 12px;
+}
+.header .navbar .nav-link, .navbar .dropdown-item{
+    color: #000c04;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+    position: relative;
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #189A46;
+}
+.header .navbar .nav-link:hover{
+    color: #189A46;
+}
+
+.navbar .dropdown-item:hover{
+    color: #189A46;
+    background-color: initial;
+}
+
+.header .navbar .nav-link::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: #189A46;
+    bottom: 0px;
+    transition: all 0.4s;
+}
+.navbar .dropdown-item::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: #189A46;
+    bottom: 13px;
+    transition: all 0.4s;
+}
+.header .navbar .nav-link:hover::before{
+    width: 100%;
+}
+.navbar .dropdown-item:hover::before{
+    width: 100%;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.navbar .dropdown-item{
+    padding: 0.35rem 1.5rem 0.9rem 1.5rem;
+    width: 100px;
+    margin-right: 50px ;
+}
+.navbar .fa-angle-down{
+    font-size: 12px;
+    padding-left: 2px;
+    font-weight: 600;
+}
+.dropdown-menu.show{
+    padding: 10px 30px 10px 6px;
+    border-radius: 10px;
+    left: -55%;
+    top: 130%;
+}
+.dropdown-menu.show::before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
 }
 
