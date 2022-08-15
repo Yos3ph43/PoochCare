@@ -9,18 +9,18 @@ html,body{
 }
 
 /* header - navbar */
-.header {
-    background-color: #fff ;
-    z-index: 0;
-}
-.header .container{
-    padding: 0 25px;
-}
 .header.fixed-top{
+    background-color: #fff ;
+    z-index: 10;
+    transition: all 0.5s;
     top: 40px;
     z-index: 10;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
+.header .container{
+    padding: 0 25px;
+}
+
 .header .navbar .navbar-collapse{
     flex-grow: 0;
 }
@@ -115,3 +115,107 @@ html,body{
     z-index: 1001;
 }
 
+/* carouse */
+.carousel .owl-carousel{
+    position: relative;
+}
+.carousel .owl-carousel .owl-nav{
+    display: none;
+}
+.carousel .owl-carousel .owl-item{
+    min-height: calc(100vh - 40px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel .owl-carousel .item1{
+    background-image: url(../images/banner1.jpg);
+}
+.carousel .owl-carousel .item2{
+    background-image: url(../images/banner2.jpg);
+}
+.carousel .owl-carousel .item3{
+    background-image: url(../images/banner3.jpg);
+}
+.carousel .owl-carousel .item4{
+    background-image: url(../images/banner4.jpg);
+}
+.carousel .owl-carousel .owl-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0c0c0c;
+    opacity: 0.6;
+}
+.carousel .owl-dots{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+.carousel .owl-item .container{
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.carousel .owl-item .info{
+    z-index: 2;
+    color: #fff;
+    max-width: 700px;
+}
+.carousel .info h5{
+    font-size: 4.125rem;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+}
+.carousel .info p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.carousel .info .readmore{
+    background-color: #fff;
+    border-radius: 10px;
+    line-height: 28px;
+    padding: 12px 35px;
+    transition: 0.3s ease-in;
+    color: #189A46;
+    font-size: 1.125rem;
+}
+.carousel .info .contactus{
+    background-color: transparent;
+    border-radius: 10px;
+    line-height: 28px;
+    padding: 12px 35px;
+    transition: 0.3s ease-in;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 1.125rem;
+}
+.carousel .info .contactus:hover{
+    background-color: #fff;
+    color: #189A46;
+}
+/* owlcarousel dot */
+.owl-theme .owl-dots .owl-dot span{
+    color: #fff;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background:#189A46;    
+    width: 30px;
+    height: 10px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background:#189A46;    
+    width: 30px;
+    height: 10px;
+}
