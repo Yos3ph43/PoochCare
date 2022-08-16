@@ -1,3 +1,4 @@
+/* global */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,32 @@ html,body{
     font-family: 'Jost', sans-serif;
     font-size: 16px;
 }
+p{
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #696969;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 48px;
+}
+span{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+.container{
+    max-width: 1200px;
+    padding: 48px 15px;
+}
+
 
 /* header - navbar */
 .header.fixed-top{
@@ -185,6 +212,7 @@ html,body{
 .carousel .info p{
     font-size: 1.2rem;
     margin: 0;
+    color: #fff;
 }
 .carousel .info .readmore{
     background-color: #fff;
@@ -223,4 +251,182 @@ html,body{
     background:#189A46;    
     width: 30px;
     height: 10px;
+}
+
+/* about */
+.about{
+    padding: 48px 0;
+}
+.about .container{
+    text-align: center;
+    max-width: 720px;
+}
+
+
+.read{
+    display: inline-block;
+    border-bottom: 2px solid #189A46;
+    color: #000c04;
+    font-size: 1.063rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: ease-in-out 0.3s;
+}
+.read:hover{
+    color: #189A46;
+}
+
+/* feature */
+.feature{
+    background: rgba(147, 107, 232, 0.05);
+    padding: 3rem 0;
+}
+
+.feature i{
+    /* display: block; */
+    color: #189A46;
+    font-size: 1.875rem;
+}
+.feature a{
+    display:block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #000c04;
+}
+.feature a:hover{
+    color: #189A46;
+
+}
+.feature .read{
+    display: inline-block;
+    margin: 20px 0 0;
+    font-size: 1.063rem;
+}
+.feature .item{
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #fff;
+    transition: ease 0.5s;
+}
+.feature .item:hover{
+    background: rgba(147, 107, 232, 0.05);
+}
+
+/* service */
+.service{
+    padding: 3rem 0;
+}
+.service .container{
+    align-items: center;
+}
+.service .left{
+    padding: 0 15px 0 48px;
+    width: 50%;
+}
+.service .left img{
+    border-radius: 10px;
+}
+.service .right{
+    width: 50%;
+    padding: 0 15px;
+}
+.service .right p{
+    margin: 15px 0 35px 0;
+}
+.service .right li{
+    font-size: 1rem;
+    line-height: 26px;
+    color: #000c04;
+    margin: 15px 0;
+    font-weight: 600;
+    list-style: none;
+}
+.service .right i{
+    color: #189A46;
+    margin-right: 12px;
+    background: rgba(147, 107, 232, 0.05);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* number */
+.number{
+    padding: 3rem 0;
+    background: #189A46;
+}
+.number .container{
+    padding: 0;
+    margin: 0 auto;
+}
+.number .item{
+    text-align: center;
+}
+.number p{
+    font-size: 3.125rem;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.number span{
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* plan */
+.plan{
+    padding: 3rem 0;
+    background: rgba(147, 107, 232, 0.05);
+}
+.plan .container{
+    text-align: center;
+}
+.plan .main .container{
+    padding: 0;
+}
+.plan .row{
+    align-items: center;
+}
+.plan .title span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.563rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+.plan .item{
+    background: #fff;
+    border-radius: 10px;
+    padding: 3.5em 2.5em;
+}
+.plan .item h6{
+    margin-bottom: 10px;
+    font-size: 1.563rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+.plan .item label{
+    vertical-align: text-top;
+    font-size: 1.563rem;
+}
+.plan .item h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189A46;
+}
+.plan .item h4 span{
+    color: #999;
 }
