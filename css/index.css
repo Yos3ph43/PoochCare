@@ -430,3 +430,85 @@ a{
 .plan .item h4 span{
     color: #999;
 }
+
+
+
+/* footer */
+
+.footer{
+    background: #111;
+    color: #696969;
+    padding-top: 4rem;
+}
+.footer .content{
+    display: flex;
+    padding-bottom: 4rem;
+}
+.footer .content1{
+    width: 55%;
+    line-height: 1.2rem;
+}
+.footer .content1 .icon i{
+    margin-right: 1rem;
+    background: #111;
+    font-size: .9rem;
+}
+.footer .content1 .icon a:hover{
+    color: white;
+}
+.footer .content1 h1{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.footer .content1 a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer .content2{
+    width: 15%;
+    line-height: 2rem;
+}
+.footer .content2 h2{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    padding: .8rem 0;
+}
+.footer .content2 a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer .copyright{
+    border-top: 1px rgba(105, 105, 105, 0.2) solid;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.footer .copyright a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+#movetop{
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 101;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    background: #189a46;
+    padding: 0;
+    line-height: 36px;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+}
