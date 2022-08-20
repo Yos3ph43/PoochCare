@@ -343,7 +343,6 @@ a {
 }
 .team .item .img {
   overflow: hidden;
-  border-radius: 1rem;
 }
 .team .item .img img {
   width: 100%;
