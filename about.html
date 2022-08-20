@@ -272,27 +272,27 @@
       </div>
       <!-- backToTop -->
       <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">⤴</button>
-      <script>
-        window.onscroll = function () {
-        scrollFunction()
-        };
-  
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-        } 
-
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-      </script>
     </footer>
     
-    
+    <!-- backToTop -->
+    <script>
+      window.onscroll = function () {
+      scrollFunction()
+      };
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+      } 
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
     <!-- Jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     
