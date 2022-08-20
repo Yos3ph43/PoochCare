@@ -179,6 +179,60 @@ a {
   font-size: 1.2rem;
   font-weight: 400;
 }
+.wb,
+.tt {
+  text-align: left;
+}
+.wb .main,
+.tt .main {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(105, 105, 105, 0.1);
+}
+.wb .left,
+.wb .right,
+.tt .left,
+.tt .right {
+  width: 50%;
+}
+.wb .left .img img,
+.tt .right .img img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 5rem 0;
+}
+.wb .left .img {
+  padding: 0 2rem 0 3rem;
+}
+.tt .right .img {
+  padding: 0 3rem 0 2rem;
+}
+.wb .right .content span,
+.tt .left .content span {
+  color: #f53626;
+  font-size: 1.2rem;
+}
+.wb .right .content h1,
+.tt .left .content h1 {
+  font-weight: 600;
+}
+.wb .right .content p,
+.tt .left .content p {
+  color: #696969;
+  padding-right: 7rem;
+  font-size: 1.2rem;
+}
+.wb .right .content a,
+.tt .left .content a {
+  font-weight: 600;
+  border-bottom: #189a46 2px solid;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+.wb .right .content a:hover,
+.tt .left .content a:hover {
+  color: #189a46;
+}
 
 .footer {
   background: #111;
