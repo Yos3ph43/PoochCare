@@ -10,29 +10,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-
+    
+    <!-- link css  -->
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-
-                </div>
-                <div class="navbar">
-
-                </div>
-            </nav>
+    <header class="header fixed-top" id="navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pooch Care</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=" fa icon-expand fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html" style="color: #189A46;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog<i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                  <li><a class="dropdown-item" href="#">Blog single</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
     </header>
     <section class="carousel">
-        <div class="img">
-        </div>
         <div class="content">
             <div class="container">
                 <h1>About Us</h1>
-                <a href="">Home</a>
+                <a href="" style="color: #189A46;">Home</a>
                 <span>
                     <i class="fa fa-arrow-right mx-2"></i>
                     About
@@ -40,11 +72,231 @@
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
-    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="about">
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <h1>ABOUT US</h1>
+            <p>We Have 10+ Years Of <br> Experience.</p>
+            <span>Let Us Take Care Of Your Pets!</span>
+          </div>
+          <div class="right">
+            <p>Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis</p>
+            <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
+            <a href="/services.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="history">
+      <div class="container">
+        <div class="content">
+          <div class="content1">
+            <span style="color: #F53626; font-size: 1.1rem;">OUR HISTORY OF POOCH CARE</span>
+            <h1 style="font-weight: 600;">Our History</h1>
+            <p>Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+          </div>
+          <div class="content2">
+            <div class="item">
+              <h2>2017</h2>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item">
+              <h2>2018</h2>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item">
+              <h2>2019</h2>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item">
+              <h2>2020</h2>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="who">
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <span>WHO WE ARE</span>
+            <h1>Why Choose Us</h1>
+            <p>Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia</p>
+            <div class="img"><img src="./images/banner3.jpg" alt=""></div>
+          </div>
+          <div class="right">
+            <div class="item">
+              <div class="icon"><i class="fa fa-american-sign-language-interpreting"></i></div>
+              <div class="item_content">
+                <a href="">Care Advices</a>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><i class="fa fa-question-circle"></i></div>
+              <div class="item_content">
+                <a href="">Emergency Services</a>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><i class="fa fa-headphones"></i></div>
+              <div class="item_content">
+                <a href="">Customer Supports</a>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><i class="fa fa-user-md"></i></div>
+              <div class="item_content">
+                <a href="">Veterinary Help</a>
+                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+    <div class="container">
+      <div class="header">
+        <span>OUR EXPERTS</span>
+        <h1>Our Team</h1>
+      </div>
+      <main class="main">
+        <div class="item">
+          <div class="img">
+            <a href=""><img src="./images/team1.jpg" alt=""></a>
+          </div>
+          <div class="content">
+            <a href="">Micheal Wagou</a><br>
+            <span>Training</span>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <a href=""><img src="./images/team2.jpg" alt=""></a>
+          </div>
+          <div class="content">
+            <a href="">Alex Mitchell</a><br>
+            <span>Boarding</span>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img"><a href=""><img src="./images/team3.jpg" alt=""></a>
+          </div>
+          <div class="content">
+            <a href="">Scott Colon</a><br>
+            <span>Grooming</span>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <a href=""><img src="./images/team4.jpg" alt=""></a>
+          </div>
+          <div class="content">
+            <a href="">John Harris</a><br>
+            <span>Doggie Day Care</span>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </main>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <div class="content1">
+            <h1>Contact information</h1>
+            <p><span style="font-weight: 700;">Address :</span>#135 block, Barnard St. Brooklyn, London 10036, UK</p>
+            <p><span style="font-weight: 700;">Phone :</span><a href="tel:+(12)234-11-24">+(12)234-11-24</a></p>
+            <p><span style="font-weight: 700;">Email :</span><a href="mailto:example@mail.com">example@mail.com</p>
+            
+            <div class="icon">
+              <a href=""><span><i class="fa-brands fa-facebook-f"></i>
+              </span></a>
+              <a href=""><span><i class="fa-brands fa-twitter"></i>
+              </span></a>
+              <a href=""><span><i class="fa-brands fa-dribbble"></i>
+              </span></a>
+              <a href=""><span><i class="fa-brands fa-google"></i>
+              </span></a>
+            </div>
+          </div>
+          <div class="content2">
+            <h2>Company</h2>
+            <a href="/about.html">About Us</a><br>
+            <a href="/blog_post.html">Blog Posts</a><br>
+            <a href="/services.html">Services</a><br>
+            <a href="">Pricing</a><br>
+          </div>
+          <div class="content2">
+            <h2>Quick Links</h2>
+            <a href="/contact.html">Contact Us</a><br>
+            <a href="">Create account</a><br>
+            <a href="">Care Center</a><br>
+            <a href="">Site Feedack</a><br>
+          </div>
+          <div class="content2">
+            <h2>Support</h2>
+            <a href="">All Dogs</a><br>
+            <a href="">Care Advices</a><br>
+            <a href="">Care Support</a><br>
+            <a href="">Veterinary Help</a><br>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2020 Pooch Care. All Rights Reserved. Design by <a href="https://w3layouts.com/" style="color: #F53626;">W3Layouts</a></span>
+      </div>
+      <!-- backToTop -->
+      <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">⤴</button>
+    </footer>
+    
+    <!-- backToTop -->
+    <script>
+      window.onscroll = function () {
+      scrollFunction()
+      };
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+      } 
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
