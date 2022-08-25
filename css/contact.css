@@ -9,17 +9,13 @@ body {
   font-family: "Jost", sans-serif;
   font-size: 16px;
 }
-p {
-  font-size: 1.2rem;
-  line-height: 28px;
-  color: #696969;
-}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 48px;
 }
-span {
+h5 {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 2rem;
@@ -28,12 +24,9 @@ span {
 }
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
 }
-/* .container {
-  max-width: 1200px;
-  padding: 48px 15px;
-} */
+
 /* header - navbar */
 .header.fixed-top {
   background-color: #fff;
@@ -269,4 +262,125 @@ a {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* contact */
+
+.contact {
+  padding: 4rem 0 0;
+}
+.contact .container {
+  text-align: center;
+}
+.map iframe {
+  display: block;
+}
+
+.contact .main .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 40px;
+}
+
+/* left */
+.left .first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.left input,
+.left textarea {
+  width: 100%;
+  outline: none;
+  background: rgba(147, 107, 232, 0.05);
+  font-size: 1rem;
+  color: #252b33;
+  border: 1px solid rgba(147, 107, 232, 0.05);
+  border-radius: 6px;
+  padding: 15px 20px;
+  transition: all 0.3s;
+}
+.left input:focus,
+.left textarea:focus {
+  background: #fff;
+  border: 1px solid #189a46;
+}
+.left form .fourth {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+.left form .item {
+  margin-bottom: 20px;
+}
+
+.left form button {
+  background: #189a46;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 12px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+
+  display: inline-block;
+  transition: all 0.4s;
+}
+.left form button:hover {
+  background-color: #116e32;
+  border-color: #116e32;
+}
+.left form button:focus {
+  border-color: #116e32;
+  box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
+  background-color: #189a46;
+}
+
+/* right */
+.right .item {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-column-gap: 20px;
+}
+.right .item .info {
+  text-align: left;
+}
+
+.right .item i {
+  color: #189a46;
+  font-size: 20 px;
+  margin-top: 3px;
+}
+.right .item h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.right .item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin: 3px 0 0;
+}
+.right .phone,
+.right .mail {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .contact .main .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
 }
