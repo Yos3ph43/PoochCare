@@ -1,9 +1,9 @@
-// navbar shrink
 window.onscroll = function () {
-  scrollFunction();
+  scrollFunctionNavShrink();
+  scrollFunctionToTop();
 };
-
-function scrollFunction() {
+// navbar shrink
+function scrollFunctionNavShrink() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0px";
   } else {
@@ -12,11 +12,8 @@ function scrollFunction() {
 }
 
 // backtotop button
-window.onscroll = function () {
-  scrollFunction();
-};
 
-function scrollFunction() {
+function scrollFunctionToTop() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("movetop").style.display = "block";
   } else {
@@ -43,4 +40,32 @@ $(document).ready(function () {
     removalDelay: 300,
     mainClass: "my-mfp-zoom-in",
   });
+});
+// index carousel
+var owl = $(".slider");
+owl.owlCarousel({
+  items: 1,
+  loop: true,
+  margin: 0,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: false,
+});
+// index feedback slider
+$(".feedback_slide").owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 2,
+    },
+  },
 });

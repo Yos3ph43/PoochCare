@@ -59,8 +59,8 @@
                   Blog<i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Blog Post</a></li>
-                  <li><a class="dropdown-item" href="#">Blog single</a></li>
+                  <li><a class="dropdown-item" href="/blog_post.html">Blog Post</a></li>
+                  <li><a class="dropdown-item" href="/blog_single.html">Blog single</a></li>
                   <!-- <li><hr class="dropdown-divider"></li> -->
                   <li><a class="dropdown-item" href="/landingpage.html">Landing Page</a></li>
                 </ul>
@@ -613,61 +613,23 @@
   </script>
   <!-- owlcarousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- carousel -->
+  <!-- carousel -->
   <script>
-    var owl = $(".slider");
-    owl.owlCarousel({
-      items: 1,
-      loop: true,
-      margin: 0,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      autoplayTimeout: 4000,
-      autoplayHoverPause: false,
-    });
+    
   </script>
-    <!-- feed back -->
-  <script>
-    $('.feedback_slide').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 2
-        }
-      }
-    })
-  </script>
+  <!-- feed back -->
+  
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- index.js -->
-  <script src="./js/index.js"></script>
 
   <!-- magnific popup -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script>
-    // navbar shrink
-    window.onscroll = function () {
-      scrollFunction();
-    };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "0px";
-      } else {
-        document.getElementById("navbar").style.padding = "5px";
-      }
-    }
-  </script>
+  <!-- navbar shrink -->
+  <!-- index.js -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
