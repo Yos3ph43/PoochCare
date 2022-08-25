@@ -19,7 +19,7 @@ h2 {
   font-weight: 600;
   line-height: 48px;
 }
-span {
+h5 {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 2rem;
@@ -269,4 +269,79 @@ a {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* title */
+
+.blog {
+  padding: 3rem 0;
+  background: rgba(147, 107, 232, 0.05);
+}
+.blog .container {
+  padding: 0 15px 24px;
+}
+.blog .title {
+  text-align: center;
+}
+
+/* blog item */
+
+.blog .item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: ease 0.3s;
+}
+.blog .item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 30px 10px rgb(0 0 0 / 6%);
+}
+.blog .item .bot {
+  padding: 30px 20px;
+}
+.blog .bot a {
+  transition: all 0.3s;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #000c04;
+}
+.blog .bot a:hover {
+  color: #189a46;
+}
+.blog .bot .author a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* letter-spacing: 0.5px; */
+}
+.blog .bot .author a:hover {
+  color: #f53626;
+}
+.blog .bot .author {
+  margin: 1rem 0 0.5rem;
+  color: #999;
+}
+
+.blog .meta span {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 15px;
+  color: #888;
+}
+
+/* pagination */
+.pagination .active {
+  color: #189a46;
+}
+.pagination a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000c04;
+  width: 20px;
+  text-align: center;
+  margin: 0 5px;
+}
+.pagination a:hover {
+  color: #189a46;
 }

@@ -370,6 +370,13 @@ a {
 .right .mail {
   margin-top: 2.5rem;
 }
+.right .item a {
+  transition: ease 0.3s;
+}
+.right .item a:hover {
+  text-decoration: underline;
+  color: #189a46;
+}
 
 @media screen and (max-width: 1200px) {
 }
