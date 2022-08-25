@@ -232,3 +232,16 @@ a {
   border-radius: 50%;
   transition: 0.3s ease-out;
 }
+
+/* banner */
+
+.banner {
+  padding: 4rem 0;
+  margin-top: 90px;
+  background: url(/images/banner4.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.banner::before {
+  position: absolute;
+}
