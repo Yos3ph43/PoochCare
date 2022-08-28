@@ -36,6 +36,7 @@ a {
 }
 
 /* header - navbar */
+
 .header.fixed-top {
   background-color: #fff;
   z-index: 10;
@@ -150,6 +151,7 @@ a {
 }
 
 /* carousel */
+
 .carousel .owl-carousel {
   position: relative;
 }
@@ -357,10 +359,15 @@ a {
 .number {
   padding: 3rem 0;
   background: #189a46;
+  /* display: none; */
 }
 .number .container {
   padding: 0;
   margin: 0 auto;
+}
+.number .row {
+  max-width: 100%;
+  margin: 0;
 }
 .number .item {
   text-align: center;
@@ -1181,5 +1188,52 @@ button::-moz-focus-inner {
   100% {
     box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%),
       0 0 0 40px rgb(50 100 245 / 0%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .service .left {
+    width: 70%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  .service .right {
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  .plan .row {
+    display: block;
+  }
+  .col-sm-4 {
+    width: 70%;
+    margin: 2rem auto;
+  }
+  /* .plan .row .item {
+    width: 90%;
+    margin: 0 auto;
+  } */
+  .submit .form button {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .service .left {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  .service .right {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .col-sm-4 {
+    width: 90%;
+    margin: 2rem auto;
   }
 }

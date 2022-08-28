@@ -385,9 +385,18 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
+  .contact .main .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 576px) {
+  .contact .main .container {
+    max-width: 100%;
+  }
 }
