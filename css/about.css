@@ -453,3 +453,37 @@ a {
 .footer .copyright a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .about .content .left,
+  .about .content .right {
+    width: 50%;
+    padding: 0;
+  }
+  .who .content {
+    display: block;
+    text-align: center;
+  }
+  .who .content .left {
+    text-align: center;
+  }
+  .history .content {
+    text-align: center;
+  }
+  .team .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .footer .content1 {
+    width: 90%;
+  }
+  .footer .content2 {
+    width: 100%;
+  }
+  .footer .content2:nth-child(4) {
+    padding-left: 1rem;
+  }
+}

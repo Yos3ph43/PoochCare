@@ -477,3 +477,36 @@ a {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .footer .content1 {
+    width: 90%;
+  }
+  .footer .content2 {
+    width: 100%;
+  }
+  .footer .content2:nth-child(4) {
+    padding-left: 1rem;
+  }
+  .gallery .content {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .content1 {
+    width: 100%;
+  }
+  .footer .content2 {
+    width: 100%;
+  }
+  .footer .content2:nth-child(2) {
+    padding-left: 1rem;
+  }
+}
