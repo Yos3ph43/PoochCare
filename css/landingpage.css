@@ -264,7 +264,7 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contact .main .container {
     max-width: 90%;
     margin: 0 auto;

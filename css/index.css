@@ -1231,7 +1231,7 @@ button::-moz-focus-inner {
     max-width: 720px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .service .left {
     width: 70%;
     margin: 1rem auto;
