@@ -36,6 +36,10 @@ a {
 }
 
 /* header - navbar */
+.header .navbar .nav-item {
+  padding: 6px 12px;
+  text-align: center;
+}
 
 .header.fixed-top {
   background-color: #fff;
@@ -60,15 +64,12 @@ a {
 
 .navbar .navbar-brand {
   color: #189a46;
-  font-size: 2.125rem;
+  font-size: 34px;
   font-weight: 600;
 }
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
   color: #189a46;
-}
-.header .navbar .nav-item {
-  padding: 0 12px;
 }
 .header .navbar .nav-link,
 .navbar .dropdown-item {
@@ -705,7 +706,7 @@ a {
   padding-bottom: 4rem;
 }
 .footer .content1 {
-  width: 55%;
+  /* width: 55%; */
   line-height: 1.2rem;
 }
 .footer .content1 .icon i {
@@ -722,12 +723,12 @@ a {
   font-weight: 600;
   padding: 1rem 0;
 }
-.footer .content1 a:hover {
+.footer .content a:hover {
   color: white;
   text-decoration: underline;
 }
 .footer .content2 {
-  width: 15%;
+  /* width: 15%; */
   line-height: 2rem;
 }
 .footer .content2 h2 {
@@ -736,10 +737,7 @@ a {
   font-weight: 600;
   padding: 0.8rem 0;
 }
-.footer .content2 a:hover {
-  color: white;
-  text-decoration: underline;
-}
+
 .footer .copyright {
   border-top: 1px rgba(105, 105, 105, 0.2) solid;
   text-align: center;
@@ -748,7 +746,20 @@ a {
 .footer .copyright a:hover {
   text-decoration: underline;
 }
+.footer .content.row {
+  max-width: 100%;
+}
+.footer .icon span:hover {
+  color: #fff;
+}
+.footer .icon span {
+  transition: ease 0.3s;
+}
+.footer .icon a:hover {
+  text-decoration: none;
+}
 
+/* back to top btn */
 #movetop {
   display: none;
   position: fixed;
@@ -1209,7 +1220,7 @@ button::-moz-focus-inner {
   .plan .row {
     display: block;
   }
-  .col-sm-4 {
+  .plan .col-sm-4 {
     width: 70%;
     margin: 2rem auto;
   }
@@ -1221,8 +1232,20 @@ button::-moz-focus-inner {
     width: 100%;
     margin-top: 16px;
   }
+  .footer .container {
+    max-width: 540px;
+  }
+  .footer .content1 {
+    margin-bottom: 3rem;
+  }
 }
 @media screen and (max-width: 576px) {
+  .header .container {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
   .service .left {
     width: 90%;
     margin: 1rem auto;
@@ -1232,8 +1255,11 @@ button::-moz-focus-inner {
     width: 90%;
     margin: 1rem auto;
   }
-  .col-sm-4 {
+  .plan .col-sm-4 {
     width: 90%;
     margin: 2rem auto;
+  }
+  .footer .container .content {
+    padding-left: 15px;
   }
 }
