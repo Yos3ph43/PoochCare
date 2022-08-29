@@ -287,3 +287,56 @@ a {
 .footer .copyright a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .wb .main,
+  .tt .main {
+    display: grid;
+    padding: 1rem 2rem;
+  }
+  .wb .left,
+  .wb .right,
+  .tt .left,
+  .tt .right {
+    width: 100%;
+  }
+  .tt .right .img,
+  .wb .left .img {
+    padding: 0;
+  }
+  .wb .right .content p,
+  .tt .left .content p {
+    padding: 0;
+  }
+  .tt .left {
+    order: 2;
+  }
+  .footer .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .footer .content1 {
+    width: 90%;
+  }
+  .footer .content2 {
+    width: 100%;
+  }
+  .footer .content2:nth-child(4) {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .content1 {
+    width: 100%;
+  }
+  .footer .content2 {
+    width: 100%;
+  }
+  .footer .content2:nth-child(2) {
+    padding-left: 1rem;
+  }
+}
