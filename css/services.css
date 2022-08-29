@@ -196,17 +196,17 @@ a {
 .tt .right {
   width: 50%;
 }
+.wb .right {
+  padding-left: 2rem;
+}
+.wb .left .img {
+  padding-right: 2rem;
+}
 .wb .left .img img,
 .tt .right .img img {
   width: 100%;
   border-radius: 0.5rem;
   margin: 5rem 0;
-}
-.wb .left .img {
-  padding: 0 2rem 0 3rem;
-}
-.tt .right .img {
-  padding: 0 3rem 0 2rem;
 }
 .wb .right .content span,
 .tt .left .content span {
