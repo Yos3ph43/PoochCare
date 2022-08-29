@@ -508,6 +508,9 @@ a {
   .about .content {
     display: block;
   }
+  .about .content .left > p {
+    font-size: 2rem;
+  }
   .about .content .left,
   .about .content .right {
     width: 100%;

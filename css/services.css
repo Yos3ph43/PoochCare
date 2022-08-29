@@ -373,4 +373,8 @@ a {
   .footer .container .content {
     padding-left: 15px;
   }
+  .wb .main,
+  .tt .main {
+    padding: 0;
+  }
 }

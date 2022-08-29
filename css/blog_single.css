@@ -559,6 +559,12 @@ a {
   .blog_content .content5 .row {
     display: block;
   }
+  .blog_content .quote p {
+    font-size: 1.3rem !important;
+  }
+  .blog_content .content4 a {
+    font-size: 1.2rem !important;
+  }
   .footer .container .content {
     padding-left: 15px;
   }
