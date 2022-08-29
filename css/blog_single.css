@@ -389,10 +389,15 @@ a {
   width: 100%;
   font-size: 1.1rem;
   padding: 1rem;
-  border: none;
   background-color: #936be80d;
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+.reply .info input:focus,
+.reply .mes textarea:focus {
+  border: #189a46 1px solid;
 }
 .reply .mes textarea {
   width: 100%;
@@ -402,6 +407,7 @@ a {
   background-color: #936be80d;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
+  outline: none;
 }
 .reply .button {
   text-align: right;
@@ -414,6 +420,14 @@ a {
   font-weight: 400;
   border-radius: 0.5rem;
   background-color: #189a46;
+  transition: all 0.5s;
+}
+.reply .button button:hover {
+  background-color: #116930;
+}
+.reply .button button:focus {
+  background-color: #116930;
+  border: #116930 1px solid;
 }
 
 .footer {
@@ -470,9 +484,6 @@ a {
   text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
-  .container {
-    padding: 0 2rem;
-  }
   .container1 {
     padding: 0;
   }
@@ -493,6 +504,18 @@ a {
   }
 }
 @media screen and (max-width: 576px) {
+  .blog .title h1 {
+    padding: 0;
+  }
+  .blog .icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog_content .content6 .row,
+  .blog_content .content2,
+  .blog_content .content5 .row {
+    display: block;
+  }
   .footer .content {
     display: grid;
     grid-template-columns: 1fr 1fr;

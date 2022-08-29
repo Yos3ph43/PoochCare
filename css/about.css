@@ -455,9 +455,12 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .about .content {
+    display: block;
+  }
   .about .content .left,
   .about .content .right {
-    width: 50%;
+    width: 100%;
     padding: 0;
   }
   .who .content {
@@ -467,11 +470,20 @@ a {
   .who .content .left {
     text-align: center;
   }
+  .who .right .item {
+    display: block;
+    text-align: center;
+  }
+  .who .right .item .icon,
+  .who .right .item .item_content {
+    width: 100%;
+  }
   .history .content {
     text-align: center;
   }
   .team .main {
     grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
   .footer .content {
     display: grid;
