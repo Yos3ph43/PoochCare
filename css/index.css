@@ -36,6 +36,9 @@ a {
 }
 
 /* header - navbar */
+.fa-times {
+  padding: 0 2.5px;
+}
 .header .navbar .nav-item {
   padding: 6px 12px;
   text-align: center;
@@ -1208,7 +1211,13 @@ button::-moz-focus-inner {
   }
 }
 @media screen and (max-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
   .header .navbar .nav-link::before {
+    display: none;
+  }
+  .navbar .dropdown-item:hover::before {
     display: none;
   }
   .dropdown-menu[data-bs-popper] {

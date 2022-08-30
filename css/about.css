@@ -33,6 +33,9 @@ a {
   margin: 0 auto;
   padding: 0 auto;
 }
+.fa-times {
+  padding: 0 2px;
+}
 .header.fixed-top {
   background-color: #fff;
   z-index: 10;
@@ -481,7 +484,13 @@ a {
   }
 }
 @media screen and (max-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
   .header .navbar .nav-link::before {
+    display: none;
+  }
+  .navbar .dropdown-item:hover::before {
     display: none;
   }
   .dropdown-menu[data-bs-popper] {

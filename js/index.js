@@ -69,3 +69,9 @@ $(".feedback_slide").owlCarousel({
     },
   },
 });
+
+function navbarToggle() {
+  document.getElementById("navbarToggle").classList.toggle("fa-bars");
+  document.getElementById("navbarToggle").classList.toggle("fa-times");
+  console.log("test");
+}
