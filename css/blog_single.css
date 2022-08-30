@@ -383,7 +383,10 @@ a {
 }
 .post .content span {
   font-size: 1.1rem;
-  color: #696969;
+  color: rgba(105, 105, 105, 0.8);
+}
+.post .content > span:nth-of-type(1) {
+  font-size: 1rem;
 }
 .post .content span a {
   font-size: 1.1rem;
@@ -398,6 +401,7 @@ a {
 }
 .post .content span p {
   padding-top: 0.5rem;
+  font-weight: 400;
 }
 .post .content span p i {
   padding-right: 0.3rem;
