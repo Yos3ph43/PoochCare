@@ -1,0 +1,17 @@
+Member:
+ -Đặng Nguyễn Minh Luân
+ -Lương Sỹ Bảo
+
+Chia task:
+
+ -Đặng Nguyễn Minh Luân:
+	+Home/Index
+	+Blog posts
+	+Landing Page
+	+Contact
+
+ -Lương Sỹ Bảo:
+	+About
+	+Services
+	+Gallery
+	+Blog single
